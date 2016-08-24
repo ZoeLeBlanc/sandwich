@@ -19,3 +19,6 @@ var SandwichMaker = (function() {
   };
 })();
 
+/*var sandwichOutput = document.getElementById("SandwichOutput");
+      sandwichOutput.innerHTML = totalPrice.toFixed(2);
+*/
