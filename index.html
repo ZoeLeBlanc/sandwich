@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<h1>Make A Sandwich</h1>
+<div id="meat-chooser">
+<input type="checkbox" name="" value="salami">Salami
+<input type="checkbox" name="" value="turkey">Turkey
+<input type="checkbox" name="" value="roastbeef">Roast Beef
+</div>
+
+<div id="bread-chooser">
+<input type="checkbox" name="" value="rye">Rye
+<input type="checkbox" name="" value="wheat">Wheat
+<input type="checkbox" name="" value="rye">Rye
+</div>
+
+<div id="cheese-chooser">
+<input type="checkbox" name="" value="feta">Feta
+<input type="checkbox" name="" value="blue">Blue
+<input type="checkbox" name="" value="provolone">Provolone
+</div>
+
+<div id="veggies-chooser">
+<input type="checkbox" name="" value="onions">Onions
+<input type="checkbox" name="" value="tomatoes">Tomatoes
+<input type="checkbox" name="" value="lettuce">Lettuce
+</div>
+
+<div id="SandwichOutput"></div>
+<script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
+<script type="text/javascript" src="javascripts/Meat.js"></script>
+<script type="text/javascript" src="javascripts/Bread.js"></script>
+<script type="text/javascript" src="javascripts/Cheese.js"></script>
+<script type="text/javascript" src="javascripts/Veggies.js"></script>
+<script type="text/javascript" src="javascripts/Condiments.js"></script>
+<script type="text/javascript" src="javascripts/DOMHandler.js"></script>
+</body>
+</html>
+<!--
+Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Create a Sandwich module, then create the following as individual modules, using IIFE syntax, to augment Sandwich:
+
+bread
+meat
+cheese
+condiments
+veggies
+Your project should have one HTML file that has:
+
+a section of options for each sandwich part
+the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat")
+an empty DOM element into which the final sandwich order and its cost will be inserted
+The ingredient choices should be stored as JS objects that contain the ingredients as keys and their cost as the value. {"turkey": 0.90, "bacon": 1.50}
+
+Make sure the ingredient objects cannot be accessed by the other modules except through an accessor (getter) method.
+
+Each IIFE should expose, in its public interface, a method named add{ingredient} (e.g. addMeat or addVeggies) that accepts a single argument. That argument's value should be the ingredient selected by the user.
+
+You should also create an additional JavaScript file that handles interacting with the form elements and determining which method should be called.
+
+Don't worry about exposing the prices to the user until you display the final cost. This is just an exercise, not a business model.
+
+Here's some simple boilerplate code to get you started.
+
+-->
